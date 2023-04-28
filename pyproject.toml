@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-celery+redis"
+version = "0.1.0"
+description = ""
+authors = ["javokhir <inboxjavohir@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_celery+redis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+sqlalchemy = "^2.0.9"
+psycopg2-binary = "^2.9.6"
+dotenv = "^0.0.5"
+load-dotenv = "^0.1.0"
+redis = "^4.5.4"
+kombu = "^5.2.4"
+celery = "^5.2.7"
+faker = "^18.4.0"
+bcrypt = "^4.0.1"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
